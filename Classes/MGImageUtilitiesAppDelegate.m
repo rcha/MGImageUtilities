@@ -32,12 +32,12 @@
 }
 
 
-- (void)dealloc
-{
-    [window release];
-	
-    [super dealloc];
-}
+//- (void)dealloc
+//{
+//    [window release];
+//	
+//    [super dealloc];
+//}
 
 
 - (IBAction)methodChanged:(id)sender
