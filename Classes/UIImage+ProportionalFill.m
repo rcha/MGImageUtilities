@@ -104,7 +104,7 @@
 		// Try older method.
 		CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 		CGContextRef context = CGBitmapContextCreate(NULL, fitSize.width, fitSize.height, 8, (fitSize.width * 4), 
-													 colorSpace, kCGImageAlphaPremultipliedLast);
+													 colorSpace, (CGBitmapInfo)kCGImageAlphaPremultipliedLast);
 		CGImageRef sourceImg = CGImageCreateWithImageInRect([self CGImage], sourceRect);
 		CGContextDrawImage(context, destRect, sourceImg);
 		CGImageRelease(sourceImg);
